@@ -23,15 +23,23 @@ This is a Django project featuring a Telegram bot for a shop/catalog system, com
 
 ## Quick Start
 
-1. **Configure environment variables**
-
-   Set your secrets in `.env` and docker-compose.yml files:
+1. **Clone the repository**
 
    ```bash
+   git clone https://github.com/ameer611/sector-soft-task.git
+   cd sector-soft-task
+   ```
+
+2. **Configure environment variables**
+
+   Copy `.env.example` to `.env` and set your secrets, also in docker-compose.yml file:
+
+   ```bash
+   cp .env.example .env
    # Edit .env and set TELEGRAM_BOT_TOKEN, DJANGO_SECRET_KEY, etc.
    ```
 
-2. **Build and start the project**
+3. **Build and start the project**
 
    ```bash
    docker-compose up --build
@@ -102,7 +110,7 @@ After the project is running, visit:
 
 ## Environment Variables
 
-See `.env` for all required variables.
+See `.env.example` for all required variables.
 
 ---
 
